@@ -27,7 +27,7 @@ public class Palo {
 
 		for (int repetir = 0; repetir < cartas.length; repetir++) {
 			for (int c = 0; c < (cartas.length-1); c++) {
-				if (cartas[c].valor > cartas[c + 1].valor) {
+				if (cartas[c].getValor() > cartas[c + 1].getValor()) {
 					Carta cambio = cartas[c];
 					cartas[c] = cartas[c + 1];
 					cartas[c + 1] = cambio;

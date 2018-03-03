@@ -1,15 +1,20 @@
 package Ordenar.palo;
 
 public class Carta {
-	public int valor;
-    public String simbolo;
+	private int valor;
+    private String simbolo;
     
 	public Carta(int valor) {
 		this.valor = valor;
-		valor2simbolo();
+	}
+	public int getValor() {
+		return valor;
+	}
+	public void setValor(int valor) {
+		this.valor = valor;
 	}
 
-	public void valor2simbolo() {
+	private String valor2simbolo() {
 		switch (valor) {
 		case 1:
 			simbolo = "A";
@@ -27,39 +32,13 @@ public class Carta {
 			simbolo = Integer.toString(valor);
 			break;
 		}
+		return simbolo;
 	}
 
-	public void simbolo2Valor() {
+	public int simbolo2valor() {
 		switch (simbolo) {
 		case "A":
 			valor = 1;
-			break;
-		case "2":
-			valor = 2;
-			break;
-		case "3":
-			valor = 3;
-			break;
-		case "4":
-			valor = 4;
-			break;
-		case "5":
-			valor = 5;
-			break;
-		case "6":
-			valor = 6;
-			break;
-		case "7":
-			valor = 7;
-			break;
-		case "8":
-			valor = 8;
-			break;
-		case "9":
-			valor = 9;
-			break;
-		case "10":
-			valor = 10;
 			break;
 		case "J":
 			valor = 11;
@@ -70,10 +49,16 @@ public class Carta {
 		case "K":
 			valor = 13;
 			break;
+		default: 
+			valor = Integer.parseInt(simbolo);
+			break;
 		}
+		return valor;
 	}
 
 	public void mostrar() {
-		System.out.print(simbolo+", ");
+		
+		System.out.print(valor2simbolo()+", ");
+		//System.out.print((simbolo2valor())+", ");
 	}
 }
