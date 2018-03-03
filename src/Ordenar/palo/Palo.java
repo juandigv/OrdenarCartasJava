@@ -25,7 +25,7 @@ public class Palo {
 	public void ordenar() {
 		System.out.println("\n\nOrdenando:");
 
-		for (int repetir = 0; repetir < cartas.length; repetir++) {
+		for (int repetir = 1; repetir < cartas.length; repetir++) {
 			for (int c = 0; c < (cartas.length-1); c++) {
 				if (cartas[c].getValor() > cartas[c + 1].getValor()) {
 					Carta cambio = cartas[c];

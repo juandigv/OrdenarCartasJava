@@ -10,9 +10,6 @@ public class Carta {
 	public int getValor() {
 		return valor;
 	}
-	public void setValor(int valor) {
-		this.valor = valor;
-	}
 
 	private String valor2simbolo() {
 		switch (valor) {
