@@ -14,7 +14,7 @@ public class Palo {
 	public void desordenar() {
 		System.out.println("\n\nDesordenando:");
 
-		for (int x = 0; x < 13; x++) {
+		for (int x = 0; x < cartas.length ; x++) {
 			int desorden = (int) (1 + (Math.random() * 12));
 			Carta contenedor = cartas[x];
 			cartas[x] = cartas[desorden];
@@ -40,7 +40,7 @@ public class Palo {
 
 	public void mostrar() {
 
-		for (int i = 0; i < 13; i++) {
+		for (int i = 0; i < cartas.length; i++) {
 			cartas[i].mostrar();
 		}
 	}

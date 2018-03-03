@@ -29,7 +29,7 @@ public class Carta {
 		}
 	}
 
-	public void simboloValor() {
+	public void simbolo2Valor() {
 		switch (simbolo) {
 		case "A":
 			valor = 1;
