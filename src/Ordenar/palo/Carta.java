@@ -32,7 +32,7 @@ public class Carta {
 		return simbolo;
 	}
 
-	public int simbolo2valor() {
+	private int simbolo2valor() {
 		switch (simbolo) {
 		case "A":
 			valor = 1;
